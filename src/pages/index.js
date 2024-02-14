@@ -21,7 +21,7 @@ const Landing = () => {
         return (
           <div key={person._id} className="person">
             <Link to={`/${person._id}`}>
-              <h1>{person.name}</h1>
+              <h1 className="hotpink">{person.name}</h1>
             </Link>
             <img src={person.image} alt={person.name} />
             <h3>{person.title}</h3>

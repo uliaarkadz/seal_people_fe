@@ -1,0 +1,38 @@
+$mailcolor: hotpink;
+
+// h1 {
+//   background-color: $mailcolor;
+//   color: $mailcolor;
+// }
+
+@mixin hot-pink-black-letters {
+  background-color: $mailcolor;
+  color: black;
+  border: 1px solid black;
+}
+
+h1 {
+  @include hot-pink-black-letters;
+}
+
+div {
+  h2 {
+    background-color: aquamarine;
+  }
+}
+
+div {
+  input {
+    background-color: aqua;
+    font-size: 20px;
+    &[type="submit"] {
+      background-color: hotpink;
+    }
+    &:hover {
+      background-color: red;
+    }
+  }
+}
+img {
+  width: 30%;
+}

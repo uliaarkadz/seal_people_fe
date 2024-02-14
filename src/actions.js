@@ -17,7 +17,7 @@ export const updateAction = async ({ request, params }) => {
     headers: {
       "Content-Type": "Application/json",
     },
-    boby: JSON.stringify(updatePerson),
+    body: JSON.stringify(updatePerson),
   });
   return redirect("/");
 };

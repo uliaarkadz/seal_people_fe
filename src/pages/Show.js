@@ -6,7 +6,7 @@ const Show = (props) => {
   return (
     <div>
       <h1>{person.name}</h1>
-      <h1>{person.title}</h1>
+      <h2>{person.title}</h2>
       <img src={person.image} alt={person.name} />
       <h2>Update {person.name} </h2>
       <Form action={`/update/${person._id}`} method="post">
